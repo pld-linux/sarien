@@ -33,7 +33,7 @@ wszystkie nazwy plików s± ma³ymi literami.
 
 %build
 rm -f config.cache
-autoconf
+%{__autoconf}
 %configure --with-x
 %{__make}
 

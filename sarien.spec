@@ -2,13 +2,14 @@ Summary:	Interpreter for early Sierra adventures
 Summary(pl):	Interpreter dla starych gier przygodowych firmy Sierra
 Name:		sarien
 Version:	0.6.cvs20010901
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Source0:	http://prdownloads.sourceforge.net/sarien/%{name}-cvs-20010901.tar.gz
 URL:		http://sarien.sourceforge.net/
+BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -34,6 +35,7 @@ wszystkie nazwy plików s± ma³ymi literami.
 
 %build
 rm -f config.cache
+autoconf
 %configure --with-x
 %{__make}
 
@@ -42,10 +44,12 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{_bindir}
 install bin/sarien $RPM_BUILD_ROOT/%{_bindir}
 
+gzip -9nf doc/{AUTHORS,BUGS,Changelog,README.*,TODO}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Documentation/*
+%doc doc/*.gz
 %attr(755,root,root) %{_bindir}/sarien

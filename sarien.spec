@@ -5,8 +5,6 @@ Version:	0.7.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Group(de):	X11/Applikationen/Spiele
-Group(pl):	X11/Aplikacje/Gry
 Source0:	http://prdownloads.sourceforge.net/sarien/%{name}-%{version}.tar.gz
 URL:		http://sarien.sourceforge.net/
 BuildRequires:	autoconf

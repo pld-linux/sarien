@@ -5,11 +5,10 @@ Version:	0.7.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://prdownloads.sourceforge.net/sarien/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/sarien/%{name}-%{version}.tar.gz
 URL:		http://sarien.sourceforge.net/
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 This package allows you to play AGI adventures as manufactured by
@@ -33,12 +32,14 @@ wszystkie nazwy plików s± ma³ymi literami.
 rm -f config.cache
 %{__autoconf}
 %configure --with-x
+
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_bindir}
-install bin/sarien $RPM_BUILD_ROOT/%{_bindir}
+install -d $RPM_BUILD_ROOT%{_bindir}
+
+install bin/sarien $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT

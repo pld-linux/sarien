@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/sarien/%{name}-%{version}.tar.gz
+# Source0-md5:	76db53d1bdcecd37913c95af9d47820c
 URL:		http://sarien.sourceforge.net/
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

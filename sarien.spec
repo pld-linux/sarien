@@ -1,12 +1,14 @@
 Summary:	Interpreter for early Sierra adventures
+Summary(pl):	Interpreter dla starych gier przygodowych firmy Sierra
 Name:		sarien
 Version:	0.6.cvs20010901
 Release:	1
-Copyright:	1999 Dark Fiber et al.
+License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Source0:	http://prdownloads.sourceforge.net/sarien/%{name}-cvs-20010901.tar.gz
+URL:		http://sarien.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -20,9 +22,12 @@ some of the games that can be played. Run sarien in the directory
 containing the adventure files. Please make sure that all file names
 are lower-case.
 
-Authors:
-Dark Fiber <entropy@ihug.com.au> 
-Claudio Matsuoka <claudio@helllabs.com>
+%description -l pl
+Ten pakiet pozwala graæ pod X Window w gry przygodowe AGI wydane przez
+firmê Sierra pod systemy m.in. MS-DOS. King's Quest I do IV, Leisure
+Suit Larry, Space Quest i Police Quest to tylko niektóre z tych gier.
+Uruchom sarien w katalogu zawieraj±cym pliki z gry. Upewnij siê, ¿e
+wszystkie nazwy plików s± ma³ymi literami.
 
 %prep
 %setup -q -n sarien-20010901

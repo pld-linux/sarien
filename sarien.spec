@@ -42,12 +42,10 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{_bindir}
 install bin/sarien $RPM_BUILD_ROOT/%{_bindir}
 
-gzip -9nf doc/{AUTHORS,BUGS,Changelog,README.*,TODO}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*.gz
+%doc doc/{AUTHORS,BUGS,Changelog,README.*,TODO}
 %attr(755,root,root) %{_bindir}/sarien

@@ -29,7 +29,7 @@ Uruchom sarien w katalogu zawieraj±cym pliki z gry. Upewnij siê, ¿e
 wszystkie nazwy plików s± ma³ymi literami.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 rm -f config.cache

@@ -1,13 +1,13 @@
 Summary:	Interpreter for early Sierra adventures
 Summary(pl):	Interpreter dla starych gier przygodowych firmy Sierra
 Name:		sarien
-Version:	0.6.cvs20010901
-Release:	2
+Version:	0.7.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
-Source0:	http://prdownloads.sourceforge.net/sarien/%{name}-cvs-20010901.tar.gz
+Source0:	http://prdownloads.sourceforge.net/sarien/%{name}-%{version}.tar.gz
 URL:		http://sarien.sourceforge.net/
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,7 +31,7 @@ Uruchom sarien w katalogu zawieraj±cym pliki z gry. Upewnij siê, ¿e
 wszystkie nazwy plików s± ma³ymi literami.
 
 %prep
-%setup -q -n sarien-20010901
+%setup -q 
 
 %build
 rm -f config.cache

@@ -1,5 +1,5 @@
 Summary:	Interpreter for early Sierra adventures
-Summary(pl):	Interpreter dla starych gier przygodowych firmy Sierra
+Summary(pl.UTF-8):   Interpreter dla starych gier przygodowych firmy Sierra
 Name:		sarien
 Version:	0.7.0
 Release:	1
@@ -19,12 +19,12 @@ some of the games that can be played. Run sarien in the directory
 containing the adventure files. Please make sure that all file names
 are lower-case.
 
-%description -l pl
-Ten pakiet pozwala graæ pod X Window w gry przygodowe AGI wydane przez
-firmê Sierra pod systemy m.in. MS-DOS. King's Quest I do IV, Leisure
-Suit Larry, Space Quest i Police Quest to tylko niektóre z tych gier.
-Uruchom sarien w katalogu zawieraj±cym pliki z gry. Upewnij siê, ¿e
-wszystkie nazwy plików s± ma³ymi literami.
+%description -l pl.UTF-8
+Ten pakiet pozwala graÄ‡ pod X Window w gry przygodowe AGI wydane przez
+firmÄ™ Sierra pod systemy m.in. MS-DOS. King's Quest I do IV, Leisure
+Suit Larry, Space Quest i Police Quest to tylko niektÃ³re z tych gier.
+Uruchom sarien w katalogu zawierajÄ…cym pliki z gry. Upewnij siÄ™, Å¼e
+wszystkie nazwy plikÃ³w sÄ… maÅ‚ymi literami.
 
 %prep
 %setup -q

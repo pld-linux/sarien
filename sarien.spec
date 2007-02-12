@@ -1,5 +1,5 @@
 Summary:	Interpreter for early Sierra adventures
-Summary(pl.UTF-8):   Interpreter dla starych gier przygodowych firmy Sierra
+Summary(pl.UTF-8):	Interpreter dla starych gier przygodowych firmy Sierra
 Name:		sarien
 Version:	0.7.0
 Release:	1
